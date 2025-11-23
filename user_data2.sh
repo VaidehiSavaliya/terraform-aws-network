@@ -4,5 +4,5 @@ apt install -y apache2
 systemctl start apache2
 systemctl enable apache2
 
-echo "Hello from $(hostname -f) — Instance 2" > /var/www/html/index.html
+echo "Hello from $(hostname -f) = Instance 2" > /var/www/html/index.html
 

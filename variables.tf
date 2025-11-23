@@ -4,5 +4,5 @@ variable "cidr" {
 
 variable "myip" {
   description = "my ip for the ssh access"
-  default = "171.61.162.1/32"
+  default = "171.61.166.31/32"
 }
