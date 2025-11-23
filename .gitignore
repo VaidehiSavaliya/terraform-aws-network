@@ -1,0 +1,7 @@
+.terraform/
+*.exe
+*.zip
+*.tfstate
+*.tfstate.backup
+crash.log
+.terraform.tfstate.lock.info
