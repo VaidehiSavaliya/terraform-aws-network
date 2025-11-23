@@ -120,6 +120,10 @@ resource "aws_instance" "instance1" {
     vpc_security_group_ids = [aws_security_group.instancesg.id]
     subnet_id = aws_subnet.sub1.id
 
+    key_name = "terraform-aws"
+
+    user_data = file("${path.module}/user_data1.sh")
+
     tags = {
       Name = "web-server-1"
     }
@@ -130,6 +134,10 @@ resource "aws_instance" "instance2" {
     instance_type = "t3.micro"
     vpc_security_group_ids = [aws_security_group.instancesg.id]
     subnet_id = aws_subnet.sub2.id
+
+    key_name = "terraform-aws"
+
+    user_data = file("${path.module}/user_data2.sh")
 
     tags = {
       Name = "web-server-2"
